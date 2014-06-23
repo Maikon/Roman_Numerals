@@ -1,18 +1,15 @@
 class RomanConverter
 
+  CONVERSION_TABLE = { 10 => 'X', 5 => 'V', 1 => 'I' }
+
   def self.convert(number)
     roman = ''
-    if number.zero?
-      return ''
+    CONVERSION_TABLE.each do |arabic_numeral, roman_numeral|
+      while number >= arabic_numeral
+        roman << roman_numeral
+        number -= arabic_numeral
+      end
     end
-    while number >= 10
-      roman << 'X'
-      number -= 10
-    end
-    if number >= 5
-      roman << 'V'
-      number -= 5
-    end
-    roman << 'I' * number
+    roman
   end
 end

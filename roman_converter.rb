@@ -4,6 +4,6 @@ class RomanConverter
     if number.zero?
       return ''
     end
-    'I'
+    'I' * number
   end
 end

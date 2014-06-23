@@ -8,4 +8,8 @@ describe RomanConverter do
   it 'converts 1' do
     expect(RomanConverter.convert(1)).to eq 'I'
   end
+
+  it 'converts 2' do
+    expect(RomanConverter.convert(2)).to eq 'II'
+  end
 end

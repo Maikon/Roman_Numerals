@@ -18,7 +18,10 @@ describe RomanConverter do
     400  => 'CD',
     500  => 'D',
     900  => 'CM',
-    1000 => 'M'
+    1000 => 'M',
+    24   => 'XXIV',
+    39   => 'XXXIX',
+    2494 => 'MMCDXCIV'
   }.each do |arabic_numeral, roman_numeral|
     it "converts #{arabic_numeral}" do
       expect(RomanConverter.convert(arabic_numeral)).to eq roman_numeral

@@ -8,6 +8,7 @@ describe RomanConverter do
     4  => 'IV',
     5  => 'V',
     6  => 'VI',
+    9  => 'IX',
     10 => 'X',
     20 => 'XX'
   }.each do |arabic_numeral, roman_numeral|

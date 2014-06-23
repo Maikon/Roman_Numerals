@@ -1,6 +1,7 @@
 class RomanConverter
 
-  CONVERSION_TABLE = { 100 => 'C',
+  CONVERSION_TABLE = { 500 => 'D',
+                       100 => 'C',
                        90  => 'XC',
                        50  => 'L',
                        40  => 'XL',

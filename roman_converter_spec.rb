@@ -14,7 +14,8 @@ describe RomanConverter do
     40  => 'XL',
     50  => 'L',
     90  => 'XC',
-    100 => 'C'
+    100 => 'C',
+    500 => 'D'
   }.each do |arabic_numeral, roman_numeral|
     it "converts #{arabic_numeral}" do
       expect(RomanConverter.convert(arabic_numeral)).to eq roman_numeral

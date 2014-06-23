@@ -5,6 +5,10 @@ class RomanConverter
     if number.zero?
       return ''
     end
+    if number == 10
+      roman << 'X'
+      number -= 10
+    end
     if number >= 5
       roman << 'V'
       number -= 5

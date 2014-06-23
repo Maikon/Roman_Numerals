@@ -17,6 +17,7 @@ describe RomanConverter do
     100  => 'C',
     400  => 'CD',
     500  => 'D',
+    900  => 'CM',
     1000 => 'M'
   }.each do |arabic_numeral, roman_numeral|
     it "converts #{arabic_numeral}" do

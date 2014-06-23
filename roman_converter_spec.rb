@@ -5,6 +5,7 @@ describe RomanConverter do
   { 0  => '',
     1  => 'I',
     2  => 'II',
+    4  => 'IV',
     5  => 'V',
     6  => 'VI',
     10 => 'X',

@@ -1,12 +1,14 @@
 class RomanConverter
 
   def self.convert(number)
+    roman = ''
     if number.zero?
       return ''
     end
-    if number == 5
-      return 'V'
+    if number >= 5
+      roman << 'V'
+      number -= 5
     end
-    'I' * number
+    roman << 'I' * number
   end
 end

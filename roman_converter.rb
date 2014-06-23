@@ -5,7 +5,7 @@ class RomanConverter
     if number.zero?
       return ''
     end
-    if number == 10
+    while number >= 10
       roman << 'X'
       number -= 10
     end
